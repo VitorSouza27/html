@@ -1,0 +1,91 @@
+*{
+    padding: 0%/* define para o navegador que o espaçamento a ser utilizado na página é igual a zero*/;
+    margin: 0%; /*margem para a página*/
+    box-sizing: border-box;/* o espaçamento do padding conta para dentro da caixa*/
+    font-family: Arial, Helvetica, sans-serif;/* Define o tipo de fonte*/
+}
+header{ /*configura o cabeçalho da págna*/
+    background-color: rgb(0, 0, 0);
+    /*altera a cor de fundo da área de trabalho*/
+    color: rgb(255, 255, 255); /*altera a cor da fonte*/ 
+    padding: 50px;  /*espaçamento entre o texto e as margens*/
+    text-align: center; /*alinha o texto no meio, canto e etc.*/
+    border: #00c3f4e2 15px solid; /*adiciona uma borda inferior com 3 pixels de espessura*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+}
+/*grid de produtos*/
+
+.container {
+    background-color: rgba(255, 255, 255, 0.438);
+    min-height: 60vh;/*Alturas minina da seção deve ser de 60% da tela*/
+    padding: 60px;
+
+}
+
+.product-container {
+ max-width: 1200px; /*Largura máxima*/
+ margin: 0 auto;/* Mangem 0 na altura e centralizar o conteudo na horizontal*/
+
+}
+.card {
+    width: 31%; /*LARGURA DO CARD*/
+    display: inline-block; /*POSICIONA OS BLOCOS EM LINHA*/
+}
+.product-image {
+    height: 300px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+#img-1 {
+   background-image: url(../imagens/PS5.jpg);
+}
+
+#img-2 {
+    background-image: url(../imagens/controlin.jpg);
+}
+
+#img-3 {
+    background-image: url(../imagens/images.jpg);
+}
+
+#img-4 {
+    background-image: url(../imagens/xone.jpg);
+}
+
+
+h3{ /*Arruma o titulo do produto*/
+    margin-bottom: 10px;
+    color: rgb(19, 67, 143);
+    font-size: 24px;
+}
+.card p { /*Arruma o card todo*/
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: block;/*exibir o conteúdo em formato de bloco*/
+    width: 100%; /*tamanho do botão*/
+    text-align: center;/*texto no meio*/
+    text-transform: uppercase;/*texto em letra maiúscula*/
+    text-decoration: none; /*remove o sublinhado*/
+    background-color: rgb(5, 2, 181); /*cor de fundo do botão*/
+    color: aliceblue; /*cor da fonte*/
+    padding: 15px; /*espaçamento*/
+    margin-bottom: 10px; /*margem*/
+    border-radius: 10px; /*arredonda os cantos do botão*/
+
+}
+
+.btn:hover {background-color: #0d58ade2 ;}
+
+
+footer{ background-color: rgb(151, 189, 75);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    border-bottom: #000000 3px solid;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
