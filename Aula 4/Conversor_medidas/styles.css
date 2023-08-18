@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box; /*Alinha tudo nas bordas*/
+    margin: 0;/*Margem*/
+    padding: 0; /*Espaçamento*/
+}
+body{
+    font-family: Arial, Helvetica, sans-serif; /*fonte*/
+    background-color: #f4f4f4; /*Cor de fundo*/
+    display: flex; /*Torna os itens flexiveis*/
+    align-items: center; /*Alinhar os itens*/
+    justify-content: center; /*Mexe no conteudo da div*/
+    height: 100vh;/*Altura*/
+}
+.container{
+background-color: #ffff; /*Cor de fundo*/
+border-radius: 10px; /*Arrendondar as bordas*/
+box-shadow: 0 2px rgba(0,0,0,0.2);/*Sombra*/
+padding: 20px; /*Espaçamento*/
+width:400px; /*Largura*/
+}
+h1{
+    font-size: 24px; /*Tamanho da fonte*/
+    text-align: center; /*Alinhar texto*/
+    margin-bottom: 20px; /*Margem inferior*/
+
+}
+.input-group{
+    display: flex;
+    flex-direction: column; /*Transforma em Colunas*/
+}
+.input-group label{ /*input é a caixa de texto e o label é o texto*/
+    margin-bottom: 7px;
+    font-weight: bold; /*escrever em negrito*/
+}
+select,
+input[type="number"],
+input[type="text"] {
+    padding: 10px; /*Tamanho da caixa de texto*/
+    border: none;
+    font-size: 16px;
+    background-color: #eeeeee;
+}
+button{
+    background-color: green;
+    border-radius: 5px;
+    border: none;
+    color: #ffff;
+    cursor:pointer;
+    font-size: 16px ;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+button:hover{
+    background-color: #96d198 ;
+}
+.output-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.output-group label{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+#message{
+    font-size: 14px;
+    color: green;
+    margin-top:10px ;
+    text-align: center;
+}
