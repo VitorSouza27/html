@@ -1,16 +1,16 @@
 let wordList = [];
 let word = "";
-let wordSize = 10; // Número de colunas
+let wordSize = 6; // Agora ajustado para 5 letras
 let l = 0; // Linha atual
 let c = 0; // Coluna atual
 let endGame = false;
 let attempts = 6; // Número de tentativas
 
 window.onload = function() {
-    // Inicializa a lista de palavras
-    wordList = ["Santarelli"];
+    // Inicializa a lista de palavras com 5 letras
+    wordList = ["logica"];
     let rand_index = Math.floor(Math.random() * wordList.length); // Gera número aleatório
-    word = wordList[rand_index].toUpperCase(); // Imprime a palavra escolhida
+    word = wordList[rand_index].toUpperCase(); // Define a palavra escolhida
     document.addEventListener("keyup", (e) => {
         processInput(e);
     });
@@ -90,7 +90,10 @@ function update() {
 
     if (correct == wordSize) {
         endGame = true;
-        document.getElementById("message").style.display = "block"; // Mostra a mensagem e a imagem
+        document.getElementById("congrats-message").style.display = "block"; // Mostra a mensagem de Parabéns!
+        setTimeout(function() {
+            window.location.reload(); // Recarrega a página após 10 segundos
+        }, 10000);
         return;
     }
 
@@ -118,3 +121,4 @@ function update() {
         }, 5000);
     }
 }
+
