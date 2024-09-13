@@ -6,29 +6,13 @@
     <title>Termo</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-
-    <div class="area" >
-        <ul class="circles">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-        </ul>
-    <h1 id="title" data-aos="zoom-in">TERMO</h1>
-    <h2 data-aos="flip-down" style="justify-content: center; margin-top: 20PX; font-size: 40px;">Dica:</h2>
-    
-    <h2  data-aos="flip-down" style="justify-content: center; margin-bottom: 20PX; font-size: 40px;">Foi dito na apresentação</h2>
-    <div id="board" data-aos="zoom-out-down">
+    <h1 id="title">TERMO</h1>
+    <h2 style="justify-content: center;">Dica:</h2>
+    <h3 style="justify-content: center;">O sobrenome da pessoa mais Especial para mim</h3>
+    <div id="board">
         <!-- Linhas 0 -->
         <span id="0-0" class="tile"></span>
         <span id="0-1" class="tile"></span>
@@ -37,6 +21,9 @@
         <span id="0-4" class="tile"></span>
         <span id="0-5" class="tile"></span>
         <span id="0-6" class="tile"></span>
+        <span id="0-7" class="tile"></span>
+        <span id="0-8" class="tile"></span>
+        <span id="0-9" class="tile"></span>
         <!-- Linhas 1 -->
         <span id="1-0" class="tile"></span>
         <span id="1-1" class="tile"></span>
@@ -93,18 +80,16 @@
         <span id="5-8" class="tile"></span>
         <span id="5-9" class="tile"></span>
     </div>
-        <div id="error-message"  data-aos="zoom-in" style="display: none;">
+    <div id="message" style="display: none;">
+        <h2>Acertou!</h2>
+        <h2>Eu te Amoo tanto meu amor!</h2>
+
+        <h2>Casa comigo?</h2>
+        <img src="img/ftj.jpeg" alt="Imagem Especial" id="special-image" style="width: 300px; height: auto;">
+
+        <div id="error-message" style="display: none;">
             <h2>Errou, tente novamente!</h2>
         </div>
-        <div id="congrats-message"  data-aos="zoom-in" style="display: none; font-size: large;">
-            <h2>Parabéns, você acertou!</h2>
-        </div>
     </div>
-
-</div >
 </body>
 </html>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-  </script>
