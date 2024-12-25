@@ -1,0 +1,472 @@
+/*PÁGINA INICIAL*/
+body {
+    margin: 0;
+    font-family: 'Roboto';
+}
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center; /* Centraliza os itens dentro da navbar */
+    align-items: center;
+    background-color: white;
+    color: white;
+    position: fixed; /* Fixa a navbar na tela */
+    top: 0; /* Coloca a navbar no topo da tela */
+    left: 0; /* Alinha a navbar à esquerda */
+    width: 100%; /* Garante que a navbar ocupe toda a largura da tela */
+    z-index: 1000; /* Garante que a navbar fique acima de outros elementos */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: auto;
+    width: 80px;
+}
+
+.navbar-nav {
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 50px;
+    align-items: center;
+}
+
+.nav-item a {
+    color: #000000;
+    font-weight: bold;
+    font-family: "Prompt", sans-serif;
+    text-decoration: none;
+    font-size: 22px;
+    padding-left: 10px;
+    transition: 0.3s;
+}
+
+.nav-item a:hover {
+    font-size: 25px;
+    border-bottom: 2px solid red;
+}
+
+/* Carrossel */
+.carousel-wrapper {
+    display: flex;
+    justify-content: center; /* Centraliza o carrossel horizontalmente */
+    margin-bottom: 100px;
+}
+
+.carousel {
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: relative;
+    width: 100%; /* Ajusta a largura conforme necessário */
+    max-width: 1200px; /* Define uma largura máxima para o carrossel */
+    height: 500px; /* Ajuste a altura conforme necessário */
+}
+
+.carousel-images {
+    display: flex;
+    width: 300%; /* 100% para cada imagem, multiplicado pelo número de imagens */
+    height: 100%; 
+    width: 100%;/* Garante que o contêiner da imagem ocupe toda a altura do carrossel */
+    animation: slide 15s infinite;
+}
+
+.carousel-item {
+    flex: 1 0 100%;
+    max-width: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Animação do carrossel */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33.33% { transform: translateX(-100%); }
+    66.66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+/* Novo Bloco com Texto e Imagem */
+.text-image-block {
+    display: flex;
+    justify-content: space-around; /* Espaço entre o texto e a imagem */
+    align-items: center; /* Alinha o conteúdo verticalmente no centro */
+    white-space: pre-line;
+    box-shadow: 2px 0px 8px  rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9; /* Cor de fundo para destacar o bloco */
+    margin-top: 120px; /* Espaço suficiente para não sobrepor a navbar fixa */
+}
+
+.text-content {
+    font-family: "Prompt", sans-serif;
+    text-align: center;
+}
+
+.text-content h2 {
+    color: #660000;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.text-content p {
+    font-size: 10px;
+}
+
+.image-content img {
+    width: 200%; /* Ajusta a largura da imagem para o tamanho do contêiner */
+    max-width: 500px; /* Define uma largura máxima para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Adiciona bordas arredondadas à imagem */
+}
+
+/* Estilo da seção Projetos */
+.projetos h1 {
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #660000;
+    font-weight: bold;
+    font-family: "Prompt", sans-serif;
+}
+
+.produtos h1 {
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #660000;
+    font-weight: bold;
+    font-family: "Prompt", sans-serif;
+}
+
+.projetos h2 {
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: "Prompt", sans-serif;
+}
+
+/* Novo Bloco com Texto e Imagem */
+.text-image-block {
+    display: flex;
+    justify-content: space-around; /* Espaço entre o texto e a imagem */
+    align-items: center; /* Alinha o conteúdo verticalmente no centro */
+    padding: 20px;
+    white-space: pre-line;
+    background-color: #f9f9f9; /* Cor de fundo para destacar o bloco */
+    margin: 20px 0;
+}
+
+.text-content {
+    font-family: "Prompt", sans-serif;
+    text-align: left;
+    max-width: 50%; /* Ajusta a largura máxima do texto */
+}
+
+.text-content h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.text-content p {
+    font-size: 30px;
+}
+
+.image-content img {
+    width: 100%; /* Ajusta a largura da imagem para o tamanho do contêiner */
+    max-width: 500px; /* Define uma largura máxima para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Adiciona bordas arredondadas à imagem */
+}
+
+/* Estilo das caixas */
+.box-container {
+    display: flex;
+    justify-content: space-between; /* Espaço igual entre as caixas */
+    width: 100%; /* Ajuste a largura conforme necessário */
+    max-width: 1200px; /* Define uma largura máxima para o contêiner das caixas */
+    margin: 20px auto; /* Centraliza o contêiner horizontalmente e adiciona espaçamento acima e abaixo */
+    padding-bottom: 100px;
+}
+
+.box {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 30%; /* Largura das caixas, ajustada para 30% para 3 caixas */
+    text-align: center;
+}
+
+.box-img {
+    width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.box-text {
+    padding: 10px;
+    font-size: 20px;
+    color: #910303;
+}
+.box-text-description {
+    padding: 10px;
+    font-size: 15px;
+}
+
+.box-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: #B62525;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.box-button:hover {
+    background-color: #A02020;
+}
+
+/* Seção de Produtos */
+.produtos {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.produtos h1 {
+    color: #660000;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.produtos h2 {
+    color: #666;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-container {
+    display:flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-section p, .footer-section ul, .footer-section li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section h3 {
+    color: red;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #B62525;
+}
+
+.footer-section .fas {
+    margin-right: 10px;
+    color: #f9f9f9;
+}
+.footer-section-contact a{
+    font-style: none;
+    color: white;
+    text-decoration: none;
+}
+.footer-section-contact h3 {
+    color: red;
+}
+
+.footer-bottom {
+    color: white;
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
+    background-color: #333;
+}
+.footer-bottom a{
+    text-decoration: none;
+    color: #f9f9f9;
+}
+
+.footer-bottom a:hover{
+    color: #ff0000;
+}
+
+
+
+/*SERVIÇOS*/
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color:#660000;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Caixa de Texto */
+.text-box {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.text-box h2 {
+    color: #660000;
+    margin-top: 0;
+}
+
+.text-box ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.text-box ul li {
+    margin-bottom: 10px;
+}
+
+/* Botão */
+.btn {
+    display: inline-block;
+    background-color: #660000;
+    ;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #002244;
+}
+
+/*PROJETOS*/
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Principal */
+main {
+    margin-top: 100px; /* Ajusta a margem superior para compensar a navbar fixa */
+}
+
+/* Estilos para a galeria de imagens */
+.image-gallery {
+    display: flex;
+    flex-direction: column; /* Organiza as linhas da galeria verticalmente */
+    padding: 20px; /* Espaçamento ao redor da galeria */
+    margin-top: 20px; /* Adiciona espaçamento acima da galeria */
+}
+
+.gallery-row {
+    display: flex;
+    justify-content: space-between; /* Espaça as imagens igualmente */
+    margin-bottom: 20px; /* Espaçamento entre as linhas */
+}
+
+/* Ajustes na Galeria de Imagens */
+.image-gallery {
+    display: flex;
+    flex-direction: column; /* Organiza as linhas da galeria verticalmente */
+    padding: 20px; /* Espaçamento ao redor da galeria */
+    margin-top: 20px; /* Adiciona espaçamento acima da galeria */
+}
+
+.gallery-row {
+    display: flex;
+    justify-content: space-between; /* Espaça as imagens igualmente */
+    margin-bottom: 20px; /* Espaçamento entre as linhas */
+}
+
+.gallery-item {
+    width: 22%; /* Ajusta a largura para que as caixas fiquem um pouco menores */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 5px; /* Reduz o padding ao redor do conteúdo */
+    box-sizing: border-box; /* Inclui padding e border na largura total do elemento */
+}
+
+.gallery-item img {
+    width: 100%; /* Ajusta a largura da imagem para o tamanho do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    object-fit: cover; /* Garante que a imagem cubra a área sem distorção */
+    transition: transform 0.3s ease; /* Transição suave para o efeito de hover */
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.gallery-description {
+    margin-top: 5px; /* Reduz o espaçamento acima da descrição */
+}
+
+.gallery-description h3 {
+    font-size: 16px; /* Reduz o tamanho da fonte do título */
+    font-weight: bold;
+}
+
+.gallery-description p {
+    font-size: 14px; /* Reduz o tamanho da fonte da descrição */
+    margin: 2px 0; /* Ajusta o espaçamento entre os parágrafos */
+}
+
+.price {
+    font-size: 16px; /* Reduz o tamanho da fonte do preço */
+    color: #B62525; /* Cor do preço */
+    font-weight: bold;
+}
