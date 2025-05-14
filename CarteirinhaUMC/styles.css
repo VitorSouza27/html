@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.header {
+  background-color: #3b82f6;
+  color: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.header-title {
+  font-size: 20px;
+  margin-right: 100px;
+  font-weight: bold;
+}
+
+.user-photo {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 40px;
+}
+
+.logo img {
+  max-width: 150px;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 0px 16px;
+}
+
+.grid2 {
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 9px;
+    padding: 0 0px;
+    
+  padding: 0px 16px;
+  }
+  .btn {
+    text-decoration: none;
+    color: inherit;
+    padding: 30px 5px; /* Melhor controle horizontal */
+    color: white;
+    font-size: 14px; /* Reduzido para melhor encaixe em telas menores */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* permite ícone + texto futuro */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+.btn img, .btn i {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.digital { background-color: #e11d48; }
+.qrcode  { background-color: #1d4ed8; }
+.fisica  { background-color: #c4a011; color: rgb(255, 255, 255); }
+.ofertas { background-color: #108f80; }
+.cadastro { background-color: #8b5cf6; }
+.foto { background-color: #f97316; }
+.notificacoes { background-color: #059669; }
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.bottom-nav div {
+  text-align: center;
+  font-size: 12px;
+}
+.bottom-nav a {
+    flex: 1;
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+    text-decoration: none;
+  }
+  
+  .bottom-nav a i {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 2px;
+  }
