@@ -16,7 +16,7 @@ body {
 
 /* Fundo principal */
 .background-paris {
-  background: rgba(225, 223, 233, 0.7) url(/Site_Paris/img/louvre.png) center/cover no-repeat;
+  background: rgba(225, 223, 233, 0.7) url(/img/louvre.png) center/cover no-repeat;
   background-blend-mode: darken;
   background-attachment: fixed;
   width: 100%;
