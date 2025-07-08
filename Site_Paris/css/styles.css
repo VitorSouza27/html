@@ -1,0 +1,201 @@
+/* Import de fonte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Fundo principal */
+.background-paris {
+  background: rgba(0, 0, 0, 0.5) url('/Site_Paris/img/paris.jpg') center/cover no-repeat;
+  background-blend-mode: darken;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5%;
+  background-color: transparent;
+  color: white;
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
+}
+
+/* NAVBAR RESPONSIVA, ELEGANTE E COM HOVER SUAVE */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-size: 20px;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav a {
+  position: relative;
+  color: white;
+  font-weight: 500;
+  padding: 6px 4px;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a:hover {
+  color: #ddd;
+}
+
+
+
+/* Conteúdo principal */
+.paris-meio-container {
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.meio-paris {
+  color: white;
+  max-width: 600px;
+}
+
+.meio-paris h1 {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.meio-paris li {
+  font-style: italic;
+  margin-bottom: 0.6rem;
+  font-size: 16px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: red;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #cc0000;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.btn a {
+  color: white;
+  font-weight: 500;
+}
+
+/* Rodapé */
+footer {
+  background-color: #5F0101;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+
+.imagem img {
+  width: 80px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+  .background-paris {
+    width: 100%;
+    height: auto;
+  }
+  
+  .logo{
+    width: 60%;
+    height: auto;
+  }
+  .logo img{
+    width: 90%;
+    height: auto;
+  }
+
+  header {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .paris-meio-container {
+    text-align: center;
+    padding: 0 2rem;
+  }
+
+  .meio-paris h1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .meio-paris h1 {
+    font-size: 36px;
+  }
+
+  .btn {
+    width: 80%;
+
+    text-align: center;
+  }
+}

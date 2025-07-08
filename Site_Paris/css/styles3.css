@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Reset e fonte padrão */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Fundo principal */
+.background-paris {
+  background: rgba(225, 223, 233, 0.7) url(/Site_Paris/img/louvre.png) center/cover no-repeat;
+  background-blend-mode: darken;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5%;
+  background-color: transparent;
+  color: white;
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
+}
+/* NAVBAR RESPONSIVA, ELEGANTE E COM HOVER SUAVE */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-size: 20px;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav a {
+  position: relative;
+  color: white;
+  font-weight: 500;
+  padding: 6px 4px;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a:hover {
+  color: #ddd;
+}
+/* Conteúdo principal */
+.paris-meio-container {
+  align-items: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+
+.meio-paris h1,
+.meio-paris h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.meio-paris h1 {
+  font-size: 56px;
+}
+
+.meio-paris h2 {
+  font-size: 28px;
+}
+
+.meio-paris p,
+.meio-paris li {
+  color: white;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  padding-left: 8px;
+  transition: background-color 0.3s ease;
+}
+
+/* Botão */
+.botao {
+  display: block;
+  text-align: center;
+  background-color: #5F0101;
+  border-radius: 20px;
+  color: white;
+  font-size: 20px;
+  padding: 14px 24px;
+  margin: 30px auto;
+  width: fit-content;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botao a {
+  color: white;
+}
+
+.botao:hover {
+  background-color: #7e0000;
+  transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+  background-color: #5F0101;
+  text-align: center;
+  color: white;
+  padding: 20px 10px;
+  margin-top: auto;
+}
+
+/* Ícones */
+.imagem img {
+  width: 80px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .logo{
+    width: 60%;
+    height: auto;
+  }
+  .logo img{
+    width: 90%;
+    height: auto;
+  }
+    .paris-meio-container {
+      margin-top: 4rem;
+      padding: 0 2rem;
+    }
+  
+    .meio-paris h1 {
+      font-size: 40px;
+      width: 100%;
+    }
+  
+    .meio-paris h2 {
+      font-size: 24px;
+      width: 100%;
+    }
+  
+    .botao {
+      font-size: 18px;
+      padding: 12px 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    nav {
+      flex-direction: column;
+      gap: 5px;
+    }
+  
+  
+    .meio-paris h1 {
+      font-size: 32px;
+    }
+  
+    .meio-paris h2 {
+      font-size: 20px;
+    }
+  
+    .botao {
+      width: 100%;
+      text-align: center;
+      font-size: 16px;
+    }
+  }
+  
