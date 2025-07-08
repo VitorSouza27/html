@@ -13,7 +13,7 @@
 
 /* Fundo principal */
 .background-paris {
-  background: rgba(0, 0, 0, 0.5) url('img/paris.jpg') center/cover no-repeat;
+  background: rgba(0, 0, 0, 0.5) url('/Site_Paris/img/paris.jpg') center/cover no-repeat;
   background-blend-mode: darken;
   width: 100%;
   height: auto;
